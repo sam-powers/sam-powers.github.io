@@ -6,16 +6,16 @@ var project_grid_nested;
 
 function loadProjects() {
     
-d3.csv("project_grid.csv")
+d3.csv("../../project_grid.csv")
     .then(
         function(data) {   
             project_grid = data;
-            draw_rectangles(project_grid);           
+            drawProjects(project_grid);           
         });   
 }
 
 
-function draw_rectangles(project_data){
+function drawProjects(project_data){
     
     
 project_data.forEach((item, index) => {
@@ -56,10 +56,10 @@ var projecttitles = projectelements.append("div")
         .attr("class", "projectview")
 
 var projectlinks = projectelements.append("a")
-        .attr("href", function (d){return d.link})
+        .attr("href", function (d){return "projects/" + d.link})
 
 var projectimages = projectlinks.append("img")
-        .attr("src", function(d) { return "https://github.com/sam-powers/sam-powers.github.io/blob/master/images/" + d.image + ".jpg"})
+        .attr("src", function(d) { return "../../images/" + d.image + ".jpg"})
         .attr("class", "img-fluid")
 
 };
