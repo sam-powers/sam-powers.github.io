@@ -56,10 +56,10 @@ var projecttitles = projectelements.append("div")
         .attr("class", "projectview")
 
 var projectlinks = projectelements.append("a")
-        .attr("href", function (d){return "projects/" + d.link})
+        .attr("href", function (d){return d.link})
 
 var projectimages = projectlinks.append("img")
-        .attr("src", function(d) { return "images/" + d.image + ".jpg"})
+        .attr("src", function(d) { return "https://github.com/sam-powers/sam-powers.github.io/blob/master/images/" + d.image + ".jpg"})
         .attr("class", "img-fluid")
 
 };
