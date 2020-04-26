@@ -6,7 +6,7 @@ var project_grid_nested;
 
 function loadProjects() {
     
-d3.csv("https://github.com/sam-powers/sam-powers.github.io/blob/master/project_grid.csv")
+d3.csv("project_grid.csv")
     .then(
         function(data) {   
             project_grid = data;
