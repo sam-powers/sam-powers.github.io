@@ -1,0 +1,112 @@
+@media screen and (max-width: 768px) {
+
+    .row {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+
+.project-title {
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("../pics/gridpaper.jpg");
+    padding: 20px;
+/*    height: 200px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.project-text {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.project-title h1 {
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+}
+
+.project-title p {
+    color: white;
+}
+
+.tags { 
+
+   display:flex;
+    flex-direction: row;
+}
+
+.project-title mark {
+    border-radius: 2px;
+    margin: 5px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-weight: 300;
+    vertical-align: middle;
+}
+
+img {
+    align-items: center;
+ }
+
+
+
+@media screen and (min-width: 768px) {
+
+    .project-title {
+        position: fixed;
+        padding-top: 50px;
+        padding-right: 35px;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        z-index: 0;
+    }
+
+    .project-title h1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .tags {
+        flex-direction: column;
+       padding-left: 10px;
+       padding-top: 10px;
+    }
+    
+    .project-text {}
+    
+}
+
+
+.projectcontainer {
+    border-top: black solid 2.5px;
+}
+
+
+

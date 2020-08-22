@@ -1,0 +1,142 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Powers</title>
+    <link rel="icon" href="../images/sp-logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://d3js.org/d3.v5.min.js"> </script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light" height="100px">
+        <!-- Brand -->
+        <a class="navbar-brand py-1" href="#">SP</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+
+            <ul class="navbar-nav  ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div id="welcomedescription" class="container-fluid">
+                <div class="container-fluid">
+                    <span>Welcome!</span>
+                    <h1>I'm Sam Powers.</h1>
+                    <p>I use quantitative methods and data visualization to support work toward a more equitable future.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="featured-projects">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="col-md-12 recent-work">
+                            <h3 style="color: white"> lately i've been working on:</h3>
+                        </div>
+                        <a href = "projects/project_template/">
+
+                        <div class="col-md-12" style="padding-left: 40px;">
+                            <img class="img-fluid" src="../images/prep_priorauth.jpg" alt="">
+                        </div>
+                        </a>
+                        <div class="col-md-12" style="padding-left: 40px;">
+                            <h3 class="my-3">Systemic Barriers to HIV Prevention in Southern States</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-8">
+                        <a href = "projects/project_template/">
+                        <div class="col-md-12">
+                            <img class="img-fluid" src="../images/demandslogo.png" alt="" style = "border: black 1px solid;" >
+                        </div>
+</a>
+                        <div class="col-md-10">
+                            <h3 class="my-3">Voices for Equity: A Visual History of UVa Activism</h3>
+                            <p>In May 2020, UVA President Jim Ryan asked the Racial Equity Task Force to create thoughtful and bold recommendations for racial equity at the University. But thoughtful and bold recommendations already exist.
+The calls to action made by students, faculty, and community members through protests, petitions, and working groups represent decades spent on this very task. We collected 50 years of documents, analyzed them for common themes, and created an interactive library format to share our findings and start a conversation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+            <div class="col-lg-4 col-md-8 recent-work">
+                <h3 style="color: white"> here are all of my projects:</h3>
+            </div>
+            <div class="container-fluid projectcontainer" id="projectcontainer">
+
+                <div class="sectiontitlebox">
+                    <div id="projecttitle" class="sectiontitle">
+                        <div id="myButtonGroup" class="btn-group-vertical">
+                            <button type="button" class="btn btn-filter active" onclick ='drawProjects(d, "a")'>show all</button>
+                            <button type="button" class="btn btn-filter" onclick='drawProjects(d, "b")'>storytelling</button>
+                            <button type="button" class="btn btn-filter" onclick='drawProjects(d, "c")'>analysis</button>
+
+                            <button type="button" class="btn btn-filter" onclick='drawProjects(d, "d")'>cville equity</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <span>&#169;</span> 2020 | Sam Powers
+    </footer>
+
+
+    <script type="text/javascript" src="scripts/loadprojects.js"></script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myButtonGroup");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+
+
+</body></html>
