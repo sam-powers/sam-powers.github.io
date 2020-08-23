@@ -65,6 +65,12 @@ function drawProjects(project_data, filter_key) {
 
     textboxes.append("h1").text(d => d.title);
     textboxes.append("p").text(d => d.description);
+    textboxes.append("div").classed("with", true).text(function(d) {
+                                                        if (d.with == "") {
+                                                            return ""
+                                                        } else {return "@" + d.with}
+                                                        });
+
 
 
 };

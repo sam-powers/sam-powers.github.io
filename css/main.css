@@ -78,7 +78,7 @@ footer {
     padding-bottom: 40px;
 /*    padding-bottom: 100px;*/
     /*    min-width: 300px;*/
-/*    min-height: 100vh;*/
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -113,6 +113,16 @@ h3 {
 /*    color: white;*/
 }
 
+.with {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+        font-weight: 300;
+    max-width: 175px;
+    text-align: right;
+
+}
+
 .recent-work {
     background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
         url("../pics/gridpaper.jpg");
@@ -123,6 +133,8 @@ h3 {
     margin-bottom: 25px;
     border: white solid 1px;
     border-left: none;
+        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, .5);
+
 }
 
 
@@ -204,7 +216,7 @@ h3 {
     overflow: hidden;
     background: linear-gradient(rgba(255, 255, 255, .95), rgba(255, 255, 255, .95)),
         url("../pics/gridpaper.jpg");
-    border: rgba(0, 0, 0, .8) solid .1px;
+    border-bottom: rgba(0, 0, 0, .8) solid .1px;
     overflow: hidden;
 }
 
@@ -316,6 +328,7 @@ h3 {
     /* vertical center */
     justify-content: center;
     /* horizontal center */
+    border: 0px;
 
 }
 
@@ -535,4 +548,9 @@ h3 {
     margin-bottom: 20px;
      background: linear-gradient(rgba(255, 255, 255, .92), rgba(255, 255, 255, .92)),
           url("../pics/gridpaper.jpg");
+}
+
+#myButtonGroup {
+            box-shadow: 0 2px 4px -2px rgba(0, 0, 0, .5);
+
 }
