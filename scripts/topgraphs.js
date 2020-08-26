@@ -63,40 +63,40 @@ var y = 500;
 
 
 
-
-svg.appendChild(rc.arc(x+5, y+5, r, r, 0, Math.PI / 2 +.5, true, {
-  stroke: 'red', strokeWidth: 2,
-  fill: 'rgba(255,255,0,0.4)', 
-   hachureAngle: 22,
-      hachureGap: 4
-}));
-
-svg.appendChild(rc.arc(x-5, y+5, r, r, Math.PI / 2 + .55, Math.PI , true, {
-  stroke: 'red', strokeWidth: 2,
-      hachureAngle: 95,
-      hachureGap: 4,
-  fill: 'rgba(255,255,0,0.4)',
-           roughness:7
-
-}));
-
-svg.appendChild(rc.arc(x-5, y-5, r, r, Math.PI, Math.PI / 2 *3 + .65, true, {
-  stroke: 'black', strokeWidth: 1,
-      hachureAngle: 0,
-      hachureGap: 4,
-  fill: 'rgba(255,255,255,0.8)',
-               roughness:5
-
-}));
-
-svg.appendChild(rc.arc(x+40, y-20, r, r, Math.PI/2 *3 + .66, Math.PI *2, true, {
-  stroke: 'red', strokeWidth: 2,
-      hachureAngle: 50,
-      hachureGap: 4,
-  fill: 'rgba(0,0,0,0.4)',
-       roughness:4
-
-}));
+//
+//svg.appendChild(rc.arc(x+5, y+5, r, r, 0, Math.PI / 2 +.5, true, {
+//  stroke: 'red', strokeWidth: 2,
+//  fill: 'rgba(255,255,0,0.4)', 
+//   hachureAngle: 22,
+//      hachureGap: 4
+//}));
+//
+//svg.appendChild(rc.arc(x-5, y+5, r, r, Math.PI / 2 + .55, Math.PI , true, {
+//  stroke: 'red', strokeWidth: 2,
+//      hachureAngle: 95,
+//      hachureGap: 4,
+//  fill: 'rgba(255,255,0,0.4)',
+//           roughness:7
+//
+//}));
+//
+//svg.appendChild(rc.arc(x-5, y-5, r, r, Math.PI, Math.PI / 2 *3 + .65, true, {
+//  stroke: 'black', strokeWidth: 1,
+//      hachureAngle: 0,
+//      hachureGap: 4,
+//  fill: 'rgba(255,255,255,0.8)',
+//               roughness:5
+//
+//}));
+//
+//svg.appendChild(rc.arc(x+40, y-20, r, r, Math.PI/2 *3 + .66, Math.PI *2, true, {
+//  stroke: 'red', strokeWidth: 2,
+//      hachureAngle: 50,
+//      hachureGap: 4,
+//  fill: 'rgba(0,0,0,0.4)',
+//       roughness:4
+//
+//}));
 
 
 // draw sine curve
@@ -113,7 +113,7 @@ svg.appendChild(rc.arc(x+40, y-20, r, r, Math.PI/2 *3 + .66, Math.PI *2, true, {
 //}));
 
 //On the Page
-svg.appendChild(rc.polygon([[5, 300], [100, 275], [200, 225], [300, 200], [400, 100], [500,50], [500, 300]], {
+svg.appendChild(rc.polygon([[5, 995], [105, 845], [205, 845], [305, 545], [405, 745], [505,245], [605, 645], [755, 245]], {
    roughness:4,
     stroke: 'black', 
     strokeWidth: 2,
@@ -122,12 +122,18 @@ svg.appendChild(rc.polygon([[5, 300], [100, 275], [200, 225], [300, 200], [400, 
   fill: 'rgba(0,0,255,0.6)'
 }));
 
-//svg.appendChild(rc.linearPath([[0, 295], [100, 245], [200, 195], [300, 145], [400, 95],  [500, 45]], {
-//  roughness: 0.7,
-//  stroke: 'red', strokeWidth: 4
+
+//svg.appendChild(rc.polygon([[5, 1000], [150, 895], [150, 795], [238, 766], [305, 850], [400, 450], [505,750], [605, 150], [755, 250]], {   
+//   roughness:4,
+//    stroke: 'black', 
+//    strokeWidth: 2,
+//  hachureAngle: 75,
+//      hachureGap: 4,
+//  fill: 'rgba(255,0,0,0.6)'
 //}));
 
-svg.appendChild(rc.polygon([[5, 290], [100, 215], [200, 165], [300, 90], [400, 90], [500,40], [0, 40]], {
+
+svg.appendChild(rc.polygon([[5, 995], [155, 895], [155, 795], [455, 695], [255, 595], [755, 495], [355,395], [755, 245]], {   
    roughness:4,
     stroke: 'black', 
     strokeWidth: 2,
@@ -135,6 +141,51 @@ svg.appendChild(rc.polygon([[5, 290], [100, 215], [200, 165], [300, 90], [400, 9
       hachureGap: 4,
   fill: 'rgba(255,0,0,0.6)'
 }));
+
+//svg.appendChild(rc.linearPath([[5, 1000],  [755,25] ],  {
+//  roughness: 0.7,
+//  stroke: 'red', strokeWidth: 4
+//}));
+
+//svg.appendChild(rc.linearPath([[5, 1000], [105, 900],  [205, 800], [305, 700], [405, 600], [505, 500], [605, 400],
+//                              [705, 300], [755, 250]],  {
+//  roughness: 0.7,
+//  stroke: 'red', strokeWidth: 4
+//}));
+
+//svg.appendChild(rc.linearPath([[755, 550], [755, 250]],  {
+//  roughness: 0.1,
+//  stroke: 'red', strokeWidth: 2
+//}));
+
+//svg.appendChild(rc.linearPath([[5, 1300], [105, 1200],  [205, 1100], [305, 1000], [405, 900], [505, 800], [605, 700],
+//                              [705, 600], [755, 550]],  {
+//  roughness: 0.7,
+//  stroke: 'red', strokeWidth: 4
+//}));
+
+//svg.appendChild(rc.linearPath([[755, 0], [755, 250]],  {
+//  roughness: 0.1,
+//  stroke: 'red', strokeWidth: 2
+//}));
+
+//svg.appendChild(rc.linearPath([[5, 750], [105, 650],  [205, 550], [305, 450], [405, 350], [505, 250], [605, 150],
+//                              [705, 50], [755, 0]],  {
+//  roughness: 0.7,
+//  stroke: 'red', strokeWidth: 4
+//}));
+
+
+
+
+//svg.appendChild(rc.polygon([[5, 290], [100, 215], [200, 165], [300, 90], [400, 90], [500,40], [0, 40]], {
+//   roughness:4,
+//    stroke: 'black', 
+//    strokeWidth: 2,
+//  hachureAngle: 75,
+//      hachureGap: 4,
+//  fill: 'rgba(255,0,0,0.6)'
+//}));
 
 
 
