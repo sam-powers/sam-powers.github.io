@@ -47,8 +47,10 @@ function drawProjects(project_data, filter_key) {
     var textboxes = projectelements
         .append("a")
         .attr("href", function (d) {
-            return  "../../projects/" + d.link
-        })
+            if (d.project_page == 1) {
+               return "../../projects/" + d.link
+               } else {return  d.link}
+               })
         .attr("class", "text-box-link")
         .append("div")
         .classed("square-content", true)
@@ -70,7 +72,9 @@ function drawProjects(project_data, filter_key) {
                                                             return ""
                                                         } else {return "@" + d.with}
                                                         });
-
+    
+    textboxes.append("div").classed("corner", true).classed("corner-left", true)
+    textboxes.append("div").classed("corner", true).classed("corner-right", true)
 
 
 };
