@@ -3,11 +3,17 @@
     .row {
         margin-left: 0px;
     }
+    
+  .container-fluid {
+        padding-left: 0px;
+      margin-left: 0px;
+      padding-right: 0;
+    }
+
 
 }
 
-
-
+  
 .row {
     margin-right: 0px;
     padding-left: 0px;
