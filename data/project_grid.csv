@@ -15,8 +15,10 @@ al ad as,1,court watch data project,"exploring bond setting, sentencing, & prose
 al ds,1,whom do we confine?,a visual tool for exploring the history and realities of mass incarceration in america,PersonalProjects,confine,.png,1,https://openingdata.github.io/Incarceration_Trends/,0,,
 al ds as,1,single issuer districts,a data essay on how the ACA's reliance on competition between providers may be hurting patient care,PersonalProjects,single-issuer,.png,1,https://openingdata.github.io/single-issuer-districts/,0,"https://leg.colorado.gov/bills/hb19-1297#:~:text=County%20jails%20%2D%20data%20collection%20%2D%20appropriation,inmates%20confined%20in%20the%20jail.",https://cdpsdocs.state.co.us/ors/Data/Data_Instruments/HB1297/HB19-1297%20Documentation.pdf
 al ad,1,colorado jail data capacity bill,investigating the quality & availability of public jail data in colorado fueled a new law setting standardized data reporting practices for the state,Colorado ACLU w/ Charlotte McClintock,,,0,https://charlottemcclintock.github.io/projects/aclu.html,,,
-al ad as,1,covid-19 incarceration reform,project details coming soon,QuantJusticeLabs & Colorado ACLU,,,0,,,,
+al ad as,0,covid-19 incarceration reform,project details coming soon,QuantJusticeLabs & Colorado ACLU,,,0,,,,
 al,0,fulbright rwanda,project details coming soon,Fulbright & African Center of Excellence in Data Science,rwanda,.jpeg,1,,,,
 al,1,acute care operational research rwanda,project details coming soon,,acor,.png,1,,,,
 al,0,quantitative justice labs,a [fledgling] public-interest data advocacy project currently used to route my volunteer work. more info coming soon,,qjl-square,.jpg,1,,,,
-al pr,1,publications & conferences,,,,,0,,,,
+al pr,1,publications & conferences,,,,,0,../../assets/Papers&Posters.pdf,,,
+,0,Jersey City Tract Scoring,,,,,,,,,
+,0,SBA Briefing Books,,,,,,,,,
