@@ -11,7 +11,7 @@ function drawProjects(project_data, filter_key) {
     var PATTERN = filter_key,
         filtered = project_data.filter(function (str) {
             return str.tags.includes(PATTERN);
-        });
+        }).filter((d) => d.include == 1);
 
     console.log(filtered);
     

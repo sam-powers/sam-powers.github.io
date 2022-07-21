@@ -79,7 +79,7 @@ footer {
     /*    padding-bottom: 100px;*/
     /*    min-width: 300px;*/
     /*    min-height: 50vh;*/
-    height: 500px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -102,8 +102,8 @@ footer {
     background: linear-gradient(rgba(255, 255, 255, .95), rgba(255, 255, 255, .95)),
         url("../images/gridpaper.jpg");
 
-    border-top: solid white 1px;
-    border-bottom: solid white 1px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
 
 
 }
